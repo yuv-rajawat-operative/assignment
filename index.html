@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsha Bootstrap Template</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/e77460639c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="grid-container">
+        <header class="header" id="header">
+            <div class="nav-container">
+                <div class="logo-and-bars">
+                    <h2 class="logo">
+                        <a href="#index.html">ARSHA</a>
+                    </h2>
+                    <i class="fas fa-bars fa-3x" onclick="showMenuAndChangeIcon(event)"></i>
+                    <i class="fas fa-times menu-hide fa-3x" onclick="hideMenuAndChangeIcon(event)"></i>
+                </div>
+                <nav class="nav-bar">
+                    <ul class="nav-items">
+                        <li class="nav-item" onclick="hideMenuAndChangeIcon()"><a href="#home">Home</a></li>
+                        <li class="nav-item" onclick="hideMenuAndChangeIcon()"><a href="#about">About</a></li>
+                        <li class="nav-item" onclick="hideMenuAndChangeIcon()"><a href="#services">Services</a></li>
+                        <li class="nav-item" onclick="hideMenuAndChangeIcon()"><a href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item" onclick="hideMenuAndChangeIcon()"><a href="#team">Team</a></li>
+                        <li class="nav-item" onmouseenter="showOptions(event)" onmouseleave="hideOptions(event)">
+                            <div id="nav-dropdown" class="nav-dropdown">Drop Down 
+                                <ul class="hidden-dropdown">
+                                <li onclick="hideMenuAndChangeIcon()"><a href="#pricing">Pricing</a></li>
+                                <li onclick="hideMenuAndChangeIcon()"><a href="#faq">FAQ</a></li>
+                                <li onclick="hideMenuAndChangeIcon()"><a href="#newsletter">Newsletter</a></li>
+                                <li onclick="hideMenuAndChangeIcon()"><a href="#footer">Social Links</a></li>
+                                </ul>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item" onclick="hideMenuAndChangeIcon()"><a href="#contact">Contact</a></li>
+                        <li class="nav-item"><button class="navbar-getstarted" onclick="hideMenuAndChangeIcon()">Get Started</button></li>
+                    </ul>
+                </nav> 
+            </div> 
+        </header>
+        <section class="landing-hero" id="home">
+            <div class="landing-left">
+                <h1 class="landing-heading">Better Solutions For Your Business</h1>
+                <h2 class="landing-subheading">We are team of talented designers making websites with Bootstrap</h2>
+                <div class="btn-row">
+                    <button class="btn-getstarted">Get Started</button>
+                    <button class="btn-with-icon"><i class="far fa-play-circle fa-2x"></i><span class="btn-mark">Watch Video</span></button>
+                </div>
+            </div>
+            <figure class="landing-right">
+                <img class="hero-img" src="img/hero-img.png" alt="hero-img">
+            </figure>
+        </section>
+        <section class="clients-list">
+                <img class="client-img" src="img/clients/client-1.png" alt="client-image">
+                <img class="client-img" src="img/clients/client-2.png" alt="client-image">
+                <img class="client-img" src="img/clients/client-3.png" alt="client-image">
+                <img class="client-img" src="img/clients/client-4.png" alt="client-image">
+                <img class="client-img" src="img/clients/client-5.png" alt="client-image">
+                <img class="client-img" src="img/clients/client-6.png" alt="client-image">  
+        </section>
+        <section class="about" id="about">
+            <div class="section-title"><h2>About Us</h2></div>
+            <div class="about-container">
+                <div class="about-left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="about-checklist">
+                            <li><i class="fas fa-check-double"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                            <li><i class="fas fa-check-double"></i>Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                            <li><i class="fas fa-check-double"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                        </ul>
+                </div>
+                <div class="about-right">
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.
+                    </p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="whyus" id="whyus">
+            <div class="whyus-left">
+                <h3 class="whyus-heading">Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                <p class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                     labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                <ul class="whyus-points-list">
+                    <li id="point-1" class="point-container">
+                            <a class="whyus-point" id="point1" onclick="showDesc(event)">
+                                <div class="point-question" >
+                                    <span class="whyus-point-marker">01</span>
+                                    <p>Non consectetur a erat nam at lectus urna duis?</p>
+                                </div>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        <p class="point-hidden" id="point1-hidden">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                             laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                              rhoncus dolor purus non.
+                        </p>
+                    </li>
+                    <li id="point-2" class="point-container">
+                        <a class="whyus-point" id="point2" onclick="showDesc(event)">
+                            <div class="point-question">
+                                <span class="whyus-point-marker">02</span>
+                                <p>Feugiat scelerisque varius morbi enim nunc?</p>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    <p class="point-hidden" id="point2-hidden">
+                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                         velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
+                         donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                          cursus turpis massa tincidunt dui.
+                    </p>
+                </li>
+                <li id="point-3" class="point-container">
+                    <a class="whyus-point" id="point3" onclick="showDesc(event)">
+                        <div class="point-question">
+                            <span class="whyus-point-marker">03</span>
+                            <p>Non consectetur a erat nam at lectus urna duis?</p>
+                        </div>
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                <p class="point-hidden" id="point3-hidden">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                     laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                      rhoncus dolor purus non.
+                </p>
+            </li>
+                </ul>
+            </div>
+            <figure class="whyus-right">
+                <img class="whyus-img" src="img/why-us.png" alt="whyus-img">
+            </figure>
+        </section>
+        <section id="skills" class="skills col-2">
+            <div class="col-left skills-left">
+                    <img class="still-img" src="img/skills.png" alt="skills-img">
+            </div>
+            <div class="col-right skills-right">
+                <h3 class="side-heading">Voluptatem dignissimos provident quasi corporis voluptates</h3>
+                <p class="side-sub-heading-italic">
+                    <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua</em>
+                </p>
+                <div class="progress">
+                    <span class="skill">
+                        <div class="skill-name">Html</div>
+                        <div class="skill-percentage">100%</div>
+                    </span>
+                    <div class="progress-bar">
+                        <div id="covered-html" class="covered"></div>
+                        <div id="left-html" class="left"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span class="skill">
+                        <div class="skill-name">Css</div>
+                        <div class="skill-percentage">90%</div>
+                    </span>
+                    <div class="progress-bar">
+                        <div id="covered-css" class="covered"></div>
+                        <div id="left-css" class="left"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-percentage">75%</div>
+                    </span>
+                    <div class="progress-bar">
+                        <div id="covered-js" class="covered"></div>
+                        <div id="left-js" class="left"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span class="skill">
+                        <div class="skill-name">Photoshop</div>
+                        <div class="skill-percentage">55%</div>
+                    </span>
+                    <div class="progress-bar">
+                        <div id="covered-ps" class="covered"></div>
+                        <div id="left-ps" class="left"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services col-1">
+            <div class="col-1-container">
+                <div class="head-container">
+                    <h2 class="col-1-section-heading">Services</h2>
+                    <p class="col-1-section-subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="cards">
+                        <div class="card" id="card-1" onmouseenter="changeCardTitleColor(event)" onmouseleave="changeBackToNormal(event)">
+                            <div class="card-content">
+                                <i class="fas fa-basketball-ball fa-3x icon"></i>
+                                <h4 class="card-title" id="card-1-title">Lorem Ipsum</h4>
+                                <p class="card-body">
+                                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                                </p>
+                            </div>
+                        </div>
+              
+                        <div class="card" id="card-2" onmouseenter="changeCardTitleColor(event)" onmouseleave="changeBackToNormal(event)">
+                            <div class="card-content">
+                                <i class="far fa-file-alt fa-3x icon"></i>
+                                <h4 class="card-title" id="card-2-title">Sed ut perspici</h4>
+                                <p class="card-body">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card" id="card-3" onmouseenter="changeCardTitleColor(event)" onmouseleave="changeBackToNormal(event)">
+                            <div class="card-content">
+                                <i class="fas fa-fighter-jet fa-3x icon"></i>
+                                <h4 class="card-title" id="card-3-title">Magni Dolores</h4>
+                                <p class="card-body">
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                </p>
+                            </div>
+                        </div>
+                   
+                        <div class="card" id="card-4" onmouseenter="changeCardTitleColor(event)" onmouseleave="changeBackToNormal(event)">
+                            <div class="card-content">
+                                <i class="fas fa-layer-group fa-3x icon"></i>
+                                <h4 class="card-title" id="card-4-title">Nemo Enim</h4>
+                                <p class="card-body">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="cta" class="cta">
+            <div class="cta-container">
+                <div class="col-left">
+                    <h3 class="cta-title">Call To Action</h3>
+                    <p class="cta-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-right-flex">
+                    <button class="cta-btn">Call To Action</button>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio col-1">
+            <div class="col-1-container">
+                <div class="head-container">
+                    <h2 class="col-1-section-heading">Portfolio</h2>
+                    <p class="col-1-section-subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <ul class="portfolio-tabs">
+                    <li class="active-filter">All</li>
+                    <li>App</li>
+                    <li>Card</li>
+                    <li>Web</li>
+                </ul>
+                <div class="portfolio-gallery">
+                    <img src="/img/portfolio/portfolio-1.jpg" alt="img-1">
+                    <img src="/img/portfolio/portfolio-6.jpg" alt="img-6">
+                    <img src="/img/portfolio/portfolio-2.jpg" alt="img-2">
+                    <img src="/img/portfolio/portfolio-5.jpg" alt="img-5">
+                    <img src="/img/portfolio/portfolio-9.jpg" alt="img-9">
+                    <img src="/img/portfolio/portfolio-3.jpg" alt="img-3">
+                    <img src="/img/portfolio/portfolio-4.jpg" alt="img-4">
+                    <img src="/img/portfolio/portfolio-7.jpg" alt="img-7">
+                    <img src="/img/portfolio/portfolio-8.jpg" alt="img-8">
+                </div>
+            </div>
+        </section>
+        <section id="team" class="team col-1">
+            <div class="col-1-container">
+                <div class="head-container">
+                    <h2 class="col-1-section-heading">Team</h2>
+                    <p class="col-1-section-subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="cards row" id="row-1">
+                        <div class="team-card" id="card-1">
+                            <div class="team-card-content">
+                                <img class="team-member-img" src="/img/team/team-1.jpg" alt="ceo">
+                                <div class="team-member-details">
+                                    <h4 class="team-member-name">Walter White</h4>
+                                    <span class="member-desig">Chief Executive Officer</span>
+                                    <p class="member-intro">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                    <div class="social">
+                                        <a class="link-social"><i class="fab fa-twitter icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-facebook-f icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-instagram icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-linkedin icon-social fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card" id="card-2">
+                            <div class="team-card-content">
+                                <img class="team-member-img" src="/img/team/team-2.jpg" alt="pm">
+                                <div class="team-member-details">
+                                    <h4 class="team-member-name">Sarah Johnson</h4>
+                                    <span class="member-desig">Product Manager</span>
+                                    <p class="member-intro">Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                                    <div class="social">
+                                        <a class="link-social"><i class="fab fa-twitter icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-facebook-f icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-instagram icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-linkedin icon-social fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards row row-2" id="row-2">
+                        <div class="team-card" id="card-3">
+                            <div class="team-card-content">
+                                <img class="team-member-img" src="/img/team/team-3.jpg" alt="cto">
+                                <div class="team-member-details">
+                                    <h4 class="team-member-name">William Anderson</h4>
+                                    <span class="member-desig">CTO</span>
+                                    <p class="member-intro">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                                    <div class="social">
+                                        <a class="link-social"><i class="fab fa-twitter icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-facebook-f icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-instagram icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-linkedin icon-social fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="team-card" id="card-4">
+                            <div class="team-card-content">
+                                <img class="team-member-img" src="/img/team/team-4.jpg" alt="ceo">
+                                <div class="team-member-details">
+                                    <h4 class="team-member-name">Amanda Jepson</h4>
+                                    <span class="member-desig">Accountant</span>
+                                    <p class="member-intro">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                                    <div class="social">
+                                        <a class="link-social"><i class="fab fa-twitter icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-facebook-f icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-instagram icon-social fa-2x"></i></a>
+                                        <a class="link-social"><i class="fab fa-linkedin icon-social fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing col-1">
+            <div class="col-1-container">
+                <div class="head-container">
+                    <h2 class="col-1-section-heading">Pricing</h2>
+                    <p class="col-1-section-subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="price-card-row" id="row-1">
+                        <div class="price-card" id="card-1">
+                            <h3 class="price-plan">Free Plan</h3>
+                            <h4 class="plan-amount"><sup>$</sup>0<br>
+                            <span class="plan-tenure">per month</span></h4>
+                            <ul class="plan-benefits">
+                                <li class="plan-benefit included">
+                                    <i class=" fas fa-check benefit-marker"></i>
+                                    Quam adipiscing vitae proin
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Nec feugiat nisl pretium
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Nulla at volutpat diam uteera
+                                </li>
+                                <li class="plan-benefit not-included">
+                                    <i class="fas fa-times benefit-marker"></i>
+                                    Pharetra massa massa ultricies
+                                </li>
+                                <li class="plan-benefit not-included">
+                                    <i class="fas fa-times benefit-marker"></i>
+                                    Massa ultricies mi quis hendrerit
+                                </li>
+                            </ul>
+                            <button class="plan-started-btn">Get Started</button>
+                        </div>
+                        <div class="price-card card-active" id="card-recommended">
+                            <h3 class="price-plan">Business Plan</h3>
+                            <h4 class="plan-amount"><sup>$</sup>29<br>
+                            <span class="plan-tenure">per month</span></h4>
+                            <ul class="plan-benefits">
+                                <li class="plan-benefit included">
+                                    <i class=" fas fa-check benefit-marker"></i>
+                                    Quam adipiscing vitae proin
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Nec feugiat nisl pretium
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Nulla at volutpat diam uteera
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Pharetra massa massa ultricies
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Massa ultricies mi quis hendrerit
+                                </li>
+                            </ul>
+                            <button class="plan-started-btn btn-active" id="btn-blue">Get Started</button>
+                        </div>
+                        <div class="price-card" id="card-3">
+                            <h3 class="price-plan">Developer Plan</h3>
+                            <h4 class="plan-amount"><sup>$</sup>49<br>
+                            <span class="plan-tenure">per month</span></h4>
+                            <ul class="plan-benefits">
+                                <li class="plan-benefit included">
+                                    <i class=" fas fa-check benefit-marker"></i>
+                                    Quam adipiscing vitae proin
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Nec feugiat nisl pretium
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Nulla at volutpat diam uteera
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Pharetra massa massa ultricies
+                                </li>
+                                <li class="plan-benefit included">
+                                    <i class="fas fa-check benefit-marker"></i>
+                                    Massa ultricies mi quis hendrerit
+                                </li>
+                            </ul>
+                            <button class="plan-started-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq col-1">
+            <div class="col-1-container">
+                <div class="head-container">
+                    <h2 class="col-1-section-heading">Frequently Asked Questions</h2>
+                    <p class="col-1-section-subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <ul class="faq-list">
+                    <li id="point1" class="point-container" onclick="showFAQDesc(event)">
+                            <a class="faq-point" id="faq-point1">
+                                <div class="point-question" >
+                                    <span class="whyus-point-marker"><i class="far fa-question-circle"></i></span>
+                                    <p class="question">Non consectetur a erat nam at lectus urna duis?</p>
+                                </div>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        <p class="point-hidden" id="faq-point1-hidden">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                             laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                              rhoncus dolor purus non.
+                        </p>
+                    </li>
+                    <li id="point2" class="point-container" onclick="showFAQDesc(event)">
+                        <a class="faq-point" id="faq-point2">
+                            <div class="point-question" >
+                                <span class="whyus-point-marker"><i class="far fa-question-circle"></i></span>
+                                <p class="question">Feugiat scelerisque varius morbi enim nunc?</p>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    <p class="point-hidden" id="faq-point2-hidden">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices.
+                     Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                    </li>
+                    <li id="point3" class="point-container" onclick="showFAQDesc(event)">
+                        <a class="faq-point" id="faq-point3">
+                            <div class="point-question" >
+                                <span class="whyus-point-marker"><i class="far fa-question-circle"></i></span>
+                                <p class="question">Dolor sit amet consectetur adipiscing elit?</p>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    <p class="point-hidden" id="faq-point3-hidden">
+                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+                         Rutrum tellus pellentesque eu tincidunt.
+                         Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    </p>
+                     </li>
+                    <li id="faq-point4" class="point-container" onclick="showFAQDesc(event)">
+                        <a class="faq-point" id="faq-point4">
+                            <div class="point-question" >
+                                <span class="whyus-point-marker"><i class="far fa-question-circle"></i></span>
+                                <p class="question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</p>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    <p class="point-hidden" id="faq-point4-hidden">
+                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
+                         suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                    </li>
+                    <li id="faq-point5" class="point-container" onclick="showFAQDesc(event)">
+                        <a class="faq-point" id="faq-point5">
+                            <div class="point-question" >
+                                <span class="whyus-point-marker"><i class="far fa-question-circle"></i></span>
+                                <p class="question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</p>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    <p class="point-hidden" id="faq-point5-hidden">
+                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget 
+                        lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                    </p>
+                    </li>
+            </div>
+        </section>
+        <section id="contact" class="contact col-1">
+            <div class="col-1-container">
+                <div class="head-container">
+                    <h2 class="col-1-section-heading">Contact</h2>
+                    <p class="col-1-section-subheading">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-details">
+                       <div class="type">
+                            <i class="fas fa-map-marker-alt contact-detail-icon fa-2x"></i>
+                            <div class="type-det">
+                                <h4>Location:</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                       </div>
+                       <div class="type">
+                            <i class="fas fa-envelope contact-detail-icon fa-2x"></i>
+                            <div class="type-det">
+                                <h4>Email:</h4>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="type">
+                            <i class="fas fa-phone contact-detail-icon fa-2x"></i>
+                            <div class="type-det">
+                                <h4>Call:</h4>
+                                <p>+1 5589 55488 55s</p>
+                            </div>
+                        </div>
+                     
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3614654298563!2d-74.00832638463508!3d40.71005857933218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sin!4v1667754295675!5m2!1sen!2sin"  
+                        width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <div class="ct-row">
+                                <div class="field">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="field">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="ct-row">
+                                <div class="field">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" required> 
+                                </div>
+                            </div>
+                            <div class="ct-row">
+                                <div class="field-textarea field">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="10" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="send-message" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter" class="newsletter col-1">
+            <div class="newsletter-container">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form class="subscription-form">
+                        <input type="email" name="subcribe-email">
+                        <button class="subscribe" type="submit">Subscribe</button>
+                    </form>
+            </div>
+        </section>
+        <footer id="footer">
+            <section class="footer-top col-1">
+                    <div class="footer-row">
+                        <div class="footer-col">
+                            <h3>ARSHA</h3>
+                                <p>
+                                    A108 Adam Street<br>
+                                    New York, NY 535022<br>
+                                    United States<br>
+                                    <br>
+                                    <strong>Phone:</strong>+1 5589 55488 55<br>
+                                    <strong>Email:</strong> info@example.com
+                                </p>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Useful Links</h4>
+                                <ul>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#home">Home</a></li>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#about">About us</a></li>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#services">Services</a></li>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#">Terms of service</a></li>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#">Privacy policy</a></li>
+                                </ul>
+                        </div>
+                        
+                        <div class="footer-col">
+                            <h4>Our Services</h4>
+                                <ul>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#">Web Design</a></li>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#">Web Development</a></li>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#">Product Management</a></li>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#">Marketing</a></li>
+                                    <li><i class="fas fa-chevron-right"></i><a href="#">Graphic Design</a></li>
+                                </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Our Social Networks</h4>
+                            <p class="social">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                            <div class="footer-social-links">
+                                <a class="link-social-footer"><i class="fab fa-twitter footer-social-icons"></i></a>
+                                <a class="link-social-footer"><i class="fab fa-facebook-f footer-social-icons"></i></a>
+                                <a class="link-social-footer"><i class="fab fa-instagram footer-social-icons"></i></a>
+                                <a class="link-social-footer"><i class="fab fa-skype footer-social-icons"></i></a>
+                                <a class="link-social-footer"><i class="fab fa-linkedin footer-social-icons"></i></a>         
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="footer-btm-container">
+                    <div class="copyright">© Copyright <strong>ARSHA</strong>. All Rights Reserved</div>
+                    <div class="credits">Designed by <a href="">Yuvraj Rajawat</a></div>
+                </div>
+            </section>
+        </footer>
+        <div class="fa-button" onclick="scrollToTop()">
+            <button class="fa-btn"><i class="fas fa-arrow-up"></i></button>
+        </div>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>
