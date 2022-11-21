@@ -1283,7 +1283,7 @@ footer{
     .nav-dropdown{
         color:var(--faq-point-ques-color);
     }
-
+}
 @media screen and (max-width:993px){
     .nav-bar a:link{
         text-decoration: none;
